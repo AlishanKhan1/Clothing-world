@@ -1,0 +1,545 @@
+<div class="hero-img-box">
+    <img src="img/hero clothing.jpg" class="hero-img"
+      alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
+  </div>
+
+  https://source.unsplash.com/1600x900/?nature,Nate
+
+
+  .section-hero{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgb(251, 217, 154),rgb(249,206,206));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     animation: animated_text 6s ease-in-out infinite;
+    -moz-animation: animated_text 6s ease-in-out infinite;
+    -webkit-animation: animated_text 6s ease-in-out;
+  }
+  
+  @keyframes animated_text{
+    0%{
+      background-position: 0px 50px;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0px 50px;
+    }
+  }
+
+
+
+  
+.gallery{
+  position: relative;
+  cursor: pointer;
+  display: inline-grid;
+  overflow: hidden;
+}
+..gallery::after{
+  content: "";
+  position: absolute;
+  inset: -1px;
+  --_g: conic-gradient(at 50% 25%,rgb(0 0 0/68%) 75%,#0000 0) no-repeat;
+  background-color: var(--_g) 0 calc(34% -var(--_p,0%))/50.1% 400%,
+     var(--_g) 100% calc(100% - var(--_p, 0%))/50.1% 400%;
+     transition: 0.5s linear;
+}
+ picture.alt::after{
+  transform: scale(-1);
+ }
+
+ picture:hover::after{
+  --_p:134%;
+ }
+
+
+
+ <section class="section-meals" id="meals">
+  <div class="container center-text">
+    <span class="subheading">Meals</span>
+    <h2 class="heading-secondary">
+      Omnifood AI chooses from 5,000+ recipes
+    </h2>
+  </div>
+
+  <div class="container grid grid--3-cols margin-bottom-md">
+    <div class="meal">
+      <img src="https://source.unsplash.com/336x224/? Fashion,Clothes" class="meal-img" alt="Japanese Gyozas" />
+      <div class="meal-content">
+        <div class="meal-tags">
+          <span class="tag tag--vegetarian">Vegetarian</span>
+        </div>
+        <p class="meal-title">Japanese Gyozas</p>
+        <ul class="meal-attributes">
+          <li class="meal-attribute">
+            <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+            <span><strong>650</strong> calories</span>
+          </li>
+          <li class="meal-attribute">
+            <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+            <span>NutriScore &reg; <strong>74</strong></span>
+          </li>
+          <li class="meal-attribute">
+            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+            <span><strong>4.9</strong> rating (537)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+ <div class="meal">
+  <img src="img/Screenshot_20221027_143615 .png" class="meal-img" alt="Avocado Salad" />
+  <div class="meal-content">
+    <div class="meal-tags">
+      <span class="tag tag--vegan">Brand</span>
+      <span class="tag tag--paleo">Quality</span>
+    </div>
+    <p class="meal-title">Women Clothing</p>
+    <ul class="meal-attributes">
+      <li class="meal-attribute">
+        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+        <span><strong>400</strong> calories</span>
+      </li>
+      <li class="meal-attribute">
+        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+        <span>NutriScore &reg; <strong>92</strong></span>
+      </li>
+      <li class="meal-attribute">
+        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+        <span><strong>4.8</strong> rating (441)</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="diets"> -->
+  <h3 class="heading-tertiary">Works with any diet:</h3>
+  <ul class="list">
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Vegetarian</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Vegan</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Pescatarian</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Gluten-free</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Lactose-free</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Keto</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Paleo</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Low FODMAP</span>
+    </li>
+    <li class="list-item">
+      <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+      <span>Kid-friendly</span>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="container all-recipes">
+<a href="#" class="link">See all recipes &rarr;</a>
+</div>
+</section>
+
+
+
+
+
+
+<section class="section-pricing" id="pricing">
+  <div class="container">
+    <span class="subheading">Pricing</span>
+    <h2 class="heading-secondary">
+      Eating well without breaking the bank
+    </h2>
+  </div>
+
+  <div class="container grid grid--2-cols margin-bottom-md">
+    <div class="pricing-plan pricing-plan--starter">
+      <header class="plan-header">
+        <p class="plan-name">Starter</p>
+        <p class="plan-price"><span>$</span>399</p>
+        <p class="plan-text">per month. That's just $13 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>1 meal per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>Order from 11am to 9pm</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>Delivery is free</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="close-outline"></ion-icon>
+        </li>
+      </ul>
+      <div class="plan-sing-up">
+        <a href="#" class="btn btn--full">Start eating well</a>
+      </div>
+    </div>
+
+    <div class="pricing-plan pricing-plan--complete">
+      <header class="plan-header">
+        <p class="plan-name">Complete</p>
+        <p class="plan-price"><span>$</span>649</p>
+        <p class="plan-text">per month. That's just $11 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span><strong>2 meals</strong> per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>Order <strong>24/7</strong></span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>Delivery is free</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+          <span>Get access to latest recipes</span>
+        </li>
+      </ul>
+      <div class="plan-sing-up">
+        <a href="#" class="btn btn--full">Start eating well</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container grid">
+    <aside class="plan-details">
+      Prices include all applicable taxes. You can cancel at any time.
+      Both plans include the following:
+    </aside>
+  </div>
+
+  <div class="container grid grid--4-cols">
+    <div class="feature">
+      <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+      <p class="feature-title">Never cook again!</p>
+      <p class="feature-text">
+        Our subscriptions cover 365 days per year, even including major
+        holidays.
+      </p>
+    </div>
+    <div class="feature">
+      <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+      <p class="feature-title">Local and organic</p>
+      <p class="feature-text">
+        Our cooks only use local, fresh, and organic products to prepare
+        your meals.
+      </p>
+    </div>
+    <div class="feature">
+      <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+      <p class="feature-title">No waste</p>
+      <p class="feature-text">
+        All our partners only use reusable containers to package all your
+        meals.
+      </p>
+    </div>
+    <div class="feature">
+      <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+      <p class="feature-title">Pause anytime</p>
+      <p class="feature-text">
+        Going on vacation? Just pause your subscription, and we refund
+        unused days.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-cta" id="cta">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-text-box">
+        <h2 class="heading-secondary">Get your first meal for free!</h2>
+        <p class="cta-text">
+          Healthy, tasty and hassle-free meals are waiting for you. Start
+          eating well today. You can cancel or pause anytime. And the
+          first meal is on us!
+        </p>
+
+        <form class="cta-form" name="sign-up" netlify>
+          <div>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="John Smith" name="full-name" required />
+          </div>
+
+          <div>
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="me@example.com" name="email" required />
+          </div>
+
+          <div>
+            <label for="select-where">Where did you hear from us?</label>
+            <select id="select-where" name="select-where" required>
+              <option value="">Please choose one option:</option>
+              <option value="friends">Friends and family</option>
+              <option value="youtube">YouTube video</option>
+              <option value="podcast">Podcast</option>
+              <option value="ad">Facebook ad</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+
+          <button class="btn btn--form">Sign up now</button>
+
+          <!-- <input type="checkbox" />
+            <input type="number" /> -->
+        </form>
+      </div>
+      <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+
+
+<li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+
+
+
+
+<li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+
+
+
+
+meal css
+
+
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+
+
+
+MEALS SEACTION
+
+
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin: 6rem;
+  color:lightsalmon;
